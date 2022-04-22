@@ -1,0 +1,55 @@
+/* .btn-container{
+    background-color: #9254C8;
+}
+.myButton{
+    width: 155px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    margin-right: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.myButton:hover{
+    letter-spacing: 3px;
+}
+.mybutton::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+} */
+#main{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;   
+}
+#cards{
+    margin-top: 170px;
+}
+#what-we-do{
+    min-height: 400px;
+    margin-top: 250px;
+}
+#team{
+    min-height: 100vh;
+    flex-wrap: wrap;    
+}
+@media only screen and (max-width: 767px) {
+    #cards{
+      margin-top: 70vh;
+    }
+    #what-we-do{
+        margin-top: 80vh;
+    }
+  }

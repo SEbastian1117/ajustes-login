@@ -1,0 +1,36 @@
+<div class=" animate__animated animate__fadeIn container mb-5" id="body-simulator">
+    <div class="container text-center text-white" id="body-container">
+        <div class="d-flex justify-content-start successs">
+            <h6 id="customer-amount"> {{customerAmount}} </h6>         
+        </div>
+        <div class="d-flex justify-content-start successs">
+            <h6>USD</h6>         
+        </div>    
+        <div class="row g-3 align-items-center">
+            <h2>¿Cuántos dólares vas a invertir? (referencia con el peso Colombiano COP)</h2>
+                <div class="col-auto">
+                    <select [(ngModel)]='customerAmount' id="inputNumber" class="form-select" aria-label="Default select example">
+                        <option value="0" selected>Selecciona cantidad a invertir</option>
+                        <option *ngFor="let data of myData"> {{data}} </option>
+                    </select>
+                </div>
+                <div class="col-auto ms-5">                
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger" id="btn-down">Baja</button>
+                        <button type="button" class="btn btn-success" id="btn-up">Sube</button>
+                    </div>
+                </div>
+            
+            <div class="col-auto">
+                <span id="helpInline" class="form-text new-text text-white">
+
+                </span>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row d-none" id="dollar-zone">
+                
+            </div>
+        </div>
+    </div>
+</div>
